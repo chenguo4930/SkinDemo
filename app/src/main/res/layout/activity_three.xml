@@ -24,9 +24,4 @@
         android:text="切换皮肤"
         android:textColor="@color/colorAccent" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="跳转第二个activity"
-        android:onClick="startActivityTwo"/>
 </LinearLayout>

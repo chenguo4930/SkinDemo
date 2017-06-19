@@ -12,8 +12,8 @@
         android:layout_height="50dp"
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
-        android:textColor="@color/colorAccent"
-        android:text="Hello World" />
+        android:text="Hello World"
+        android:textColor="@color/colorAccent" />
 
 
     <Button
@@ -27,6 +27,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="跳转第二个activity"
-        android:onClick="startActivityTwo"/>
+        android:onClick="startActivityTwo"
+        android:text="跳转第三个activity" />
+
 </LinearLayout>

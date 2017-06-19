@@ -2,14 +2,17 @@ package com.example.cheng.skindemo;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 
-public class MainActivity extends SkinActivity {
+import java.io.File;
+
+public class TwoActivity extends SkinActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_two);
     }
 
     /**
@@ -18,14 +21,12 @@ public class MainActivity extends SkinActivity {
      * @param view
      */
     public void change(View view) {
-//
-//        File file = new File(Environment.getExternalStorageDirectory(), "skin.apk");
-//        SkinManager.getInstance().loadSkin(file.getAbsolutePath());
-
+        File file = new File(Environment.getExternalStorageDirectory(), "skin.apk");
+        SkinManager.getInstance().loadSkin(file.getAbsolutePath());
     }
-
 
     public void startActivityTwo(View view) {
-        startActivity(new Intent(this,TwoActivity.class));
+        startActivity(new Intent(this,ThreeActivity.class));
     }
+
 }

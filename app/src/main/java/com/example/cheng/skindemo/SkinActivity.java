@@ -15,9 +15,6 @@ public class SkinActivity extends Activity {
         skinFactory = new SkinFactory();
         LayoutInflaterCompat.setFactory(getLayoutInflater(), skinFactory);
         SkinManager.getInstance().init(this);
-    }
-
-    public void changeSkin() {
-        skinFactory.apply();
+        ActivityManager.getInstance().activities.add(this);
     }
 }
