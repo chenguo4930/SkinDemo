@@ -11,10 +11,17 @@ public class SkinActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         //布局监听器
         skinFactory = new SkinFactory();
         LayoutInflaterCompat.setFactory(getLayoutInflater(), skinFactory);
-        SkinManager.getInstance().init(this);
+
         ActivityManager.getInstance().activities.add(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ActivityManager.getInstance().activities.remove(this);
     }
 }

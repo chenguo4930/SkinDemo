@@ -64,6 +64,8 @@ class SkinManager {
             skinResource = new Resources(assetManager, context.getResources().getDisplayMetrics(),
                     context.getResources().getConfiguration());
 
+            SharedPreferencesHelper.saveApkPath(context,path);
+
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
@@ -95,7 +97,7 @@ class SkinManager {
          * 如果皮肤资源不存在
          */
         if (skinResource == null) {
-            return resId;
+            return context.getResources().getColor(resId);
         }
 
         String resName = context.getResources().getResourceEntryName(resId);

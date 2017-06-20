@@ -71,7 +71,7 @@ public class SkinFactory implements LayoutInflaterFactory {
                 //color
                 String entry_name = context.getResources().getResourceEntryName(id);
                 String typeName = context.getResources().getResourceTypeName(id);
-                //封装JavaBean
+                //封装JavaBean   android:background="@color/colorPrimaryDark"
                 SkinItem skinItem = new SkinItem(attrName, id, entry_name, typeName);
                 list.add(skinItem);
             }

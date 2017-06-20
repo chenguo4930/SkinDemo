@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bg_two"
     android:orientation="vertical"
     tools:context="com.example.cheng.skindemo.MainActivity">
 
@@ -13,15 +13,6 @@
         android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:text="Hello World"
-        android:textColor="@color/colorAccent" />
-
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:onClick="change"
-        android:text="切换皮肤"
         android:textColor="@color/colorAccent" />
 
     <Button

@@ -15,15 +15,6 @@
         android:textColor="@color/colorAccent"
         android:text="Hello World" />
 
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:onClick="change"
-        android:text="切换皮肤"
-        android:textColor="@color/colorAccent" />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
