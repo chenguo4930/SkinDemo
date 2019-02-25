@@ -25,7 +25,9 @@ public class SkinFactory implements LayoutInflaterFactory {
             "android.webkit."
     };
 
-    //系统 委托你来创建View，把自己修改生产好的View返回给系统显示
+    /**
+     *  系统 委托你来创建View，把自己修改生产好的View返回给系统显示
+     */
     @Override
     public View onCreateView(View parent, String name, Context context, AttributeSet attrs) {
 //        06-18 05:39:45.232 7436-7436/com.example.cheng.skindemo E/seven:LinearLayout
